@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { ButtonComponent } from "../../Components/Button"
+import { ContainerInputComponent } from "../../Components/ContainerInput"
 import { InputComponent } from "../../Components/Input"
 
 export const Home = ():JSX.Element => {
@@ -17,6 +18,11 @@ export const Home = ():JSX.Element => {
                     inputPlaceholder="Meu placeholder"
                     inputType="text"
                     
+                />
+                <ContainerInputComponent
+                    name="Teste"
+                    inputValue="Testando o container input"
+                    inputClassName="container"
                 />
                 <h2>{count}</h2>
             </main>

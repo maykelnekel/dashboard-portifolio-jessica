@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { NavBar } from './Components/NavBar'
 import { Home } from './Pages/Home'
+import { Login } from './Pages/Login'
 import { Pictures } from './Pages/Pictures'
 import { Profile } from './Pages/Profile'
 import { GlobalStyle } from './Styles/globalStyle'
@@ -14,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <GlobalStyle/>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Login/>}/>
         <Route path='/perfil' element={<Profile/>}/>
         <Route path='/fotos' element={<Pictures/>}/>
       </Routes>

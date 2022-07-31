@@ -12,5 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         background-color: var(--primary-color);
+        text-transform: uppercase;
+        font-family: 'Inter', sans-serif;
     }
+    strong {
+        font-weight: bold;
+    }
+
 ` 
