@@ -7,6 +7,11 @@ export const Button = styled.button`
     text-transform: uppercase;
     color: var(--primary-color);
 
+    &:hover{
+        cursor: pointer;
+        filter: brightness(120%) 
+    }
+
     &.ok{
         background-color: var(--ok-color);
     }

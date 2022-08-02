@@ -52,4 +52,7 @@ table {
 main{
 	margin: 0;
 }
+link {
+	text-decoration: none;
+}
 ` 

@@ -15,8 +15,13 @@ export const GlobalStyle = createGlobalStyle`
         text-transform: uppercase;
         font-family: 'Inter', sans-serif;
     }
+    link {
+        
+    }
     strong {
         font-weight: bold;
     }
-
+    button:hover{
+        cursor: pointer;
+    }
 ` 

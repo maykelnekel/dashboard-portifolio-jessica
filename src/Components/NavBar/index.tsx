@@ -1,30 +1,57 @@
-import { Link, Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom"
+import { MainContainer, Menu, MenuItem, NavContainer, Submenu, SubmenuIconImage, SubmenuLink, SubmenuItemContainer, SubmenuRemoveIcon, SubmenuLinkContainer, UserContainer, UserImage, UserName, MenuItemName, MenuLink, NewCategoryContainer, NewCategoryButton } from "./style"
+import RemoveIcon from "../../assets/trash.png"
 
 export const NavBar = ():JSX.Element => {
     return(
-        <aside>
-            <nav>
-                <ul>
-                    <li>
-                        <Link to="/perfil">perfil</Link>
-                    </li>
-                    <li>Fotos
-                        <ul>
-                            <li>
-                                <Link to="/fotos">tipo1</Link>
-                            </li>
-                            <li>
-                                <Link to="/fotos">tipo2</Link>
-                            </li>
-                            <li>
-                                <Link to="/fotos">tipo3</Link>
-                            </li>
+        <MainContainer>
+            <UserContainer>
+                <UserImage src="https://media.gettyimages.com/photos/mark-mccormack-a-sports-promoter-and-agent-whose-company-img-many-picture-id2004933?s=612x612"/>
+                <UserName>
+                    <strong>Meu Nome</strong>
+                </UserName>
+            </UserContainer>
+            <NavContainer>
+                <Menu>
+                    <MenuItem>
+                        <MenuItemName>
+                            <MenuLink to="/perfil">perfil</MenuLink>
+                        </MenuItemName>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItemName>
+                            Fotos
+                        </MenuItemName>
+                        <Submenu>
+                            <NewCategoryContainer>
+                                <NewCategoryButton>
+                                    nova categoria +
+                                </NewCategoryButton>
+                            </NewCategoryContainer>
+                            <SubmenuItemContainer>
+                                <SubmenuLink to="/fotos" className="">- categoria 1</SubmenuLink>
+                                <SubmenuRemoveIcon>
+                                    <SubmenuIconImage src={RemoveIcon}/>
+                                </SubmenuRemoveIcon>
+                            </SubmenuItemContainer>
+                            <SubmenuItemContainer>
+                                <SubmenuLink to="/fotos">- categoria 2</SubmenuLink>
+                                <SubmenuRemoveIcon>
+                                    <SubmenuIconImage src={RemoveIcon}/>
+                                </SubmenuRemoveIcon>
+                            </SubmenuItemContainer>
+                            <SubmenuItemContainer>
+                                <SubmenuLink to="/fotos">- categoria 3</SubmenuLink>
+                                <SubmenuRemoveIcon>
+                                    <SubmenuIconImage src={RemoveIcon}/>
+                                </SubmenuRemoveIcon>
+                            </SubmenuItemContainer>
 
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+                        </Submenu>
+                    </MenuItem>
+                </Menu>
+            </NavContainer>
             <Outlet />
-        </aside>
+        </MainContainer>
     )
 }
