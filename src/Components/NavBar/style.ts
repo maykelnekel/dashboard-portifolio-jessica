@@ -107,11 +107,13 @@ export const SubmenuRemoveIcon = styled.button`
     background: none;
     background-image: url("../../assets/trash.png");
     background-size:contain ;
-
-    
 `
 
-export const SubmenuIconImage = styled.img``
+export const SubmenuIconImage = styled.img`
+    &:hover{
+        width: 1.1rem;
+    }
+`
 
 export const NewCategoryContainer = styled.div`
     margin-bottom: 1rem;
@@ -131,3 +133,4 @@ export const NewCategoryButton = styled.button`
     }
 `
 
+export const Detail = styled.strong``

@@ -5,9 +5,11 @@ export const Input = styled.input`
     border: none;
     background-color: var(--quaternary-color);
     border-radius: 0;
-    padding: 1rem;
+    padding-left: 15px;
+    text-transform: uppercase; 
+    height: 30px;
 
     &::placeholder{
         color: var(--terceary-color);
     }
-`
+` 

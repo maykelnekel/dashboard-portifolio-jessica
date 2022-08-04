@@ -8,26 +8,6 @@ export const Home = ():JSX.Element => {
     const [count, setCount] = useState(0)
     return (
             <main>
-                <h1>Home</h1>
-                <NavBar/>
-
-                <ButtonComponent
-                    handleFunction= {()=> setCount(count+1)}
-                    name='contador'
-                    buttonClass="not-ok"
-                />
-                <InputComponent
-                    inputValue="Meu value"
-                    inputPlaceholder="Meu placeholder"
-                    inputType="text"
-                    
-                />
-                <ContainerInputComponent
-                    name="Teste"
-                    inputValue="Testando o container input"
-                    inputClassName="container"
-                />
-                <h2>{count}</h2>
             </main>
     )
 }

@@ -1,7 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { AlertComponent } from './Components/Alert'
 import { NavBar } from './Components/NavBar'
+import { NewCategoryComponent } from './Components/NewCategory'
 import { Home } from './Pages/Home'
 import { Login } from './Pages/Login'
 import { Pictures } from './Pages/Pictures'
@@ -14,6 +16,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <ResetCSS/>
     <GlobalStyle/>
     <BrowserRouter>
+      {/* <NavBar/> */}
+      <NewCategoryComponent/>
+      <AlertComponent/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>

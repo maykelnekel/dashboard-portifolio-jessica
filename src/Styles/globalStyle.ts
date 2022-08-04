@@ -8,12 +8,15 @@ export const GlobalStyle = createGlobalStyle`
         --quaternary-color: #F2F2F2;
         --details-color: #5D5FEF;
         --ok-color: #50D200;
-        --not-ok-color: #EA4343;
+        --not-ok-color: #D22C2C ;
     }
     body {
         background-color: var(--primary-color);
         text-transform: uppercase;
         font-family: 'Inter', sans-serif;
+        color: var(--secondary-color);
+        font-size: 1rem;
+
     }
     link {
         

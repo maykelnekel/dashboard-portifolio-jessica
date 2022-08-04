@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom"
-import { MainContainer, Menu, MenuItem, NavContainer, Submenu, SubmenuIconImage, SubmenuLink, SubmenuItemContainer, SubmenuRemoveIcon, SubmenuLinkContainer, UserContainer, UserImage, UserName, MenuItemName, MenuLink, NewCategoryContainer, NewCategoryButton } from "./style"
+import { MainContainer, Menu, MenuItem, NavContainer, Submenu, SubmenuIconImage, SubmenuLink, SubmenuItemContainer, SubmenuRemoveIcon, SubmenuLinkContainer, UserContainer, UserImage, UserName, MenuItemName, MenuLink, NewCategoryContainer, NewCategoryButton, Detail } from "./style"
 import RemoveIcon from "../../assets/trash.png"
 
 export const NavBar = ():JSX.Element => {
@@ -8,7 +8,7 @@ export const NavBar = ():JSX.Element => {
             <UserContainer>
                 <UserImage src="https://media.gettyimages.com/photos/mark-mccormack-a-sports-promoter-and-agent-whose-company-img-many-picture-id2004933?s=612x612"/>
                 <UserName>
-                    <strong>Meu Nome</strong>
+                    <Detail>Meu Nome</Detail>
                 </UserName>
             </UserContainer>
             <NavContainer>

@@ -6,6 +6,8 @@ export const Button = styled.button`
     background-color: var(--details-color);
     text-transform: uppercase;
     color: var(--primary-color);
+    height: 30px;
+    font-weight: bolder;
 
     &:hover{
         cursor: pointer;
@@ -18,5 +20,15 @@ export const Button = styled.button`
 
     &.not-ok{
         background-color: var(--not-ok-color);
+    }
+
+    &.alert{
+        background-color: var(--not-ok-color);
+        height: 56px;
+        font-weight: bolder;
+    }
+
+    &.addCategory{
+        height: 38px;
     }
 `
