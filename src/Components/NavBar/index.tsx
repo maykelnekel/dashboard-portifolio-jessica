@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom"
 import { MainContainer, Menu, MenuItem, NavContainer, Submenu, SubmenuIconImage, SubmenuLink, SubmenuItemContainer, SubmenuRemoveIcon, SubmenuLinkContainer, UserContainer, UserImage, UserName, MenuItemName, MenuLink, NewCategoryContainer, NewCategoryButton, Detail } from "./style"
 import RemoveIcon from "../../assets/trash.png"
+import DB from "../../Database/portifolioDatabase"
 
 export const NavBar = ():JSX.Element => {
     return(
@@ -22,31 +23,20 @@ export const NavBar = ():JSX.Element => {
                         <MenuItemName>
                             Fotos
                         </MenuItemName>
-                        <Submenu>
+                        <Submenu>  
                             <NewCategoryContainer>
                                 <NewCategoryButton>
                                     nova categoria +
                                 </NewCategoryButton>
                             </NewCategoryContainer>
-                            <SubmenuItemContainer>
-                                <SubmenuLink to="/fotos" className="">- categoria 1</SubmenuLink>
-                                <SubmenuRemoveIcon>
-                                    <SubmenuIconImage src={RemoveIcon}/>
-                                </SubmenuRemoveIcon>
-                            </SubmenuItemContainer>
-                            <SubmenuItemContainer>
-                                <SubmenuLink to="/fotos">- categoria 2</SubmenuLink>
-                                <SubmenuRemoveIcon>
-                                    <SubmenuIconImage src={RemoveIcon}/>
-                                </SubmenuRemoveIcon>
-                            </SubmenuItemContainer>
-                            <SubmenuItemContainer>
-                                <SubmenuLink to="/fotos">- categoria 3</SubmenuLink>
-                                <SubmenuRemoveIcon>
-                                    <SubmenuIconImage src={RemoveIcon}/>
-                                </SubmenuRemoveIcon>
-                            </SubmenuItemContainer>
-
+                            {(DB.categorias.map(item=>(
+                                    <SubmenuItemContainer>
+                                    <SubmenuLink to="/fotos" className="">- {item.categoria}</SubmenuLink>
+                                    <SubmenuRemoveIcon>
+                                        <SubmenuIconImage src={RemoveIcon}/>
+                                    </SubmenuRemoveIcon>
+                                </SubmenuItemContainer>
+                            )))}
                         </Submenu>
                     </MenuItem>
                 </Menu>
