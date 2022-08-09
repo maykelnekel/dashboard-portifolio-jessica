@@ -29,6 +29,7 @@ export interface ISelect{
     selectName: string
     selectId: string
     selectList: ICategoria[]
+    selectValue: string
 }
 
 export interface ICategoria {
@@ -63,4 +64,11 @@ export interface iUser {
     midias?: IMidia[]
     categorias?: ICategoria[]
     avatar:string
+}
+
+export interface IPhotoCard{
+    imageLink: string
+    imageDescription: string
+    categories: ICategoria[]
+    selectValue: string
 }
