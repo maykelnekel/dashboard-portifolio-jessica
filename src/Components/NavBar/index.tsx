@@ -7,9 +7,9 @@ export const NavBar = ():JSX.Element => {
     return(
         <MainContainer>
             <UserContainer>
-                <UserImage src="https://media.gettyimages.com/photos/mark-mccormack-a-sports-promoter-and-agent-whose-company-img-many-picture-id2004933?s=612x612"/>
+                <UserImage src={DB.avatar}/>
                 <UserName>
-                    <Detail>Meu Nome</Detail>
+                    <Detail>{DB.nome} {DB.sobrenome}</Detail>
                 </UserName>
             </UserContainer>
             <NavContainer>

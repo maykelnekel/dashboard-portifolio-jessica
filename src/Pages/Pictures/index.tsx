@@ -1,8 +1,10 @@
-import { NavBar } from "../../Components/NavBar"
+import { AddFotoFormComponent } from "../../Components/AddFotoForm"
+import { Main } from "./style"
 
 export const Pictures = ():JSX.Element => {
     return (
-            <main>
-            </main>
+            <Main>
+                <AddFotoFormComponent/>
+            </Main>
     )
 }

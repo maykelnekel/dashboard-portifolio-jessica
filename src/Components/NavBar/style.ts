@@ -11,7 +11,9 @@ export const MainContainer = styled.aside`
     background-color: var(--secondary-color);
     height: 100vh;
     color: var(--primary-color);
-  
+    @media (max-width: 768px){ 
+        display: none;
+    }
 `
 
 export const UserContainer = styled.section`

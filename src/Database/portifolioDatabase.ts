@@ -1,4 +1,6 @@
-let DB = {
+import { iUser } from "../Interfaces"
+
+let DB: iUser = {
     _id:1,
     login:"jehmassuquetto",
     email:"jessicamassuquetto@gmail.com",
@@ -7,6 +9,7 @@ let DB = {
     sobreMim:"algo sobre mim",
     nome:"Jessica",
     sobrenome:"Massuquetto",
+    avatar:"https://live.staticflickr.com/5739/buddyicons/149411834@N04_r.jpg?1479581584#149411834@N04",
     categorias:[
         {
             _id:1,

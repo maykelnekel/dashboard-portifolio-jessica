@@ -5,7 +5,7 @@ export const Button = styled.button`
     border: none;
     background-color: var(--details-color);
     text-transform: uppercase;
-    color: var(--primary-color);
+    color: var(--quaternary-color);
     height: 30px;
     font-weight: bolder;
 
@@ -16,6 +16,7 @@ export const Button = styled.button`
 
     &.ok{
         background-color: var(--ok-color);
+        height: 45px;
     }
 
     &.not-ok{

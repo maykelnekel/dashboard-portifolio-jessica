@@ -27,4 +27,8 @@ export const GlobalStyle = createGlobalStyle`
     button:hover{
         cursor: pointer;
     }
+    main {
+        display: flex;
+        width: 100vw;
+    }
 ` 

@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
 
-export const Input = styled.input`
+export const TextArea = styled.textarea`
     border: none;
     background-color: var(--quaternary-color);
     border-radius: 0;
     padding-left: 15px;
+    padding-top: 10px;
     text-transform: uppercase; 
-    height: 30px;
+    height: 90px;
     margin-bottom: 0.5rem;
+    font-family: 'Inter', sans-serif;
+
     
     &::placeholder{
         color: var(--terceary-color);
@@ -18,4 +21,4 @@ export const Input = styled.input`
         height: 90px;
         text-align: start;
     }
-` 
+`
