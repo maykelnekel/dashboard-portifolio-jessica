@@ -9,7 +9,7 @@ export const MainContainer = styled.aside`
     align-items: center;
     width: 250px;
     background-color: var(--secondary-color);
-    height: 100vh;
+    min-height: 100vh;
     color: var(--primary-color);
     @media (max-width: 768px){ 
         display: none;

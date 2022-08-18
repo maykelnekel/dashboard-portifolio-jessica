@@ -22,7 +22,8 @@ export interface IHeader{
 }
 
 export interface ITextArea{
-    textareaPlaceholder: string
+    textareaPlaceholder?: string
+    textAreaValue: string
 }
 
 export interface ISelect{

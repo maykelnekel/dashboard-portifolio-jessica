@@ -5,6 +5,10 @@ export const Main = styled.section`
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-content: start;
+    @media (max-width: 1025px){
+        margin: 0 auto;
+    }
     @media (min-width: 1025px){
         width: calc(95% - 250px);
     }

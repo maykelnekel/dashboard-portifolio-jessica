@@ -3,7 +3,8 @@ import { IPhotoCard } from "../../Interfaces"
 import { ButtonComponent } from "../Button"
 import { InputComponent } from "../Input"
 import { SelectComponent } from "../Select"
-import { TextArea } from "../TextArea/style"
+import { TextAreaComponent } from "../TextArea"
+// import { TextArea } from "../TextArea/style"
 import { FormContainer, Image, InputContainer, IntraFormContainer, Label, MainContainer } from "./style"
 
 
@@ -13,16 +14,18 @@ export const PhotoCardContainer = ({categories,imageDescription,imageLink, selec
             <Image src={imageLink} alt={imageDescription}/>
             <FormContainer>
                 <InputContainer>
-                    <Label>Link</Label>
+                    <Label>Link: </Label>
                     <InputComponent inputValue={imageLink}/>
                 </InputContainer>
-                <InputContainer>
-                    <Label>{imageDescription}</Label>
-                    <TextArea/>
+                <InputContainer className="description">
+                    <Label>descrição: </Label>
+                    <TextAreaComponent
+                        textAreaValue={imageDescription}
+                    />
                 </InputContainer>
                 <IntraFormContainer>
-                    <InputContainer>
-                        <Label>categorias</Label>
+                    <InputContainer className="select">
+                        <Label >categorias: </Label>
                         <SelectComponent
                             selectName="categorias"
                             selectId="categorias"
