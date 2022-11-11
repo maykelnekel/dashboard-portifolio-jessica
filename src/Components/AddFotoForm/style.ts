@@ -8,6 +8,7 @@ export const Form = styled.form`
     padding-top: 15px;
     max-width: 1400px;
     
+    
 `
 
 export const Tittle = styled.h3`

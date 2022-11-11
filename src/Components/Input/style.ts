@@ -9,6 +9,7 @@ export const Input = styled.input`
     text-transform: uppercase; 
     height: 30px;
     margin-bottom: 0.5rem;
+    font-size: 1rem;
     
     &::placeholder{
         color: var(--terceary-color);

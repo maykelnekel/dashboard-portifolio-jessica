@@ -10,6 +10,9 @@ export const GlobalStyle = createGlobalStyle`
         --ok-color: #50D200;
         --not-ok-color: #D22C2C ;
     }
+    html {
+        font-size: 62.5%;
+    }
     body {
         background-color: var(--primary-color);
         text-transform: uppercase;
@@ -29,6 +32,6 @@ export const GlobalStyle = createGlobalStyle`
     }
     main {
         display: flex;
-        width: 100vw;
+        /* width: 100vw; */
     }
 ` 

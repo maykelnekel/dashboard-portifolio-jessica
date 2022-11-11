@@ -8,6 +8,8 @@ export const Button = styled.button`
     color: var(--quaternary-color);
     height: 30px;
     font-weight: bolder;
+    font-size: 1rem;
+
 
     &:hover{
         cursor: pointer;

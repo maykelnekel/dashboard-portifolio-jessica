@@ -12,7 +12,7 @@ export const MainContainer = styled.aside`
     min-height: 100vh;
     color: var(--primary-color);
     @media (max-width: 768px){ 
-        display: none;
+        /* display: none; */
     }
 `
 
@@ -90,6 +90,8 @@ export const SubmenuLink = styled(Link)`
     text-decoration: none;
     color: var(--primary-color);
     font-size: 0.8rem;
+    display: flex;
+    align-items: center;
 
     &:hover{
         font-weight: bold;
@@ -113,7 +115,7 @@ export const SubmenuRemoveIcon = styled.button`
 
 export const SubmenuIconImage = styled.img`
     &:hover{
-        width: 1.1rem;
+        width: 15px;
     }
 `
 
@@ -127,6 +129,7 @@ export const NewCategoryButton = styled.button`
     color: var(--primary-color);
     text-transform: uppercase;
     padding-left: 0;
+    font-size: 0.9rem;
 
     &:hover{
         font-weight: bolder;

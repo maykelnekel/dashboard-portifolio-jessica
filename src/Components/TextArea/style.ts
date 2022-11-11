@@ -11,6 +11,7 @@ export const TextArea = styled.textarea`
     height: 90px;
     margin-bottom: 0.5rem;
     font-family: 'Inter', sans-serif;
+    font-size: 1rem;
 
     
     &::placeholder{

@@ -11,6 +11,7 @@ export const Select = styled.select`
     color: var(--terceary-color);
     margin-bottom: 0.5rem;
     font-family: 'Inter', sans-serif;
+    font-size: 1rem;
 
 `
 
